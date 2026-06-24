@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0B3C5D;
+  --color-primary-dark: #07263d;
+  --color-primary-light: #155883;
+  --color-accent: #328CC1;
+  --color-accent-dark: #23648a;
+  --color-accent-light: #52a6d4;
+  --color-neutral-light: #F9F9F9;
+  
+  --font-heading: 'Montserrat', 'Inter', system-ui, sans-serif;
+  --font-sans: 'Open Sans', 'Roboto', 'Inter', system-ui, sans-serif;
+}
+
+/* Custom global overrides */
+body {
+  background-color: var(--color-neutral-light);
+  font-family: var(--font-sans);
+  color: #1a202c;
+  margin: 0;
+}
+
+/* Custom helper classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 60, 93, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
